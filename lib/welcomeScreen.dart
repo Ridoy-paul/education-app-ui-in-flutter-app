@@ -1,4 +1,6 @@
+import 'package:responsive_sizer/responsive_sizer.dart';
 import 'package:flutter/material.dart';
+
 
 class WelcomeScreen extends StatelessWidget {
   WelcomeScreen({super.key});
@@ -7,21 +9,21 @@ class WelcomeScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Material(
       child: Container(
-        width: MediaQuery.sizeOf(context).width,
+        width: Adaptive.w(100),
         height: MediaQuery.sizeOf(context).height,
         child: Stack(children: [
           Stack(
             children: [
               Container(
-                width: MediaQuery.sizeOf(context).width,
-                height: MediaQuery.sizeOf(context).height / 1.6,
+                width: Adaptive.w(100),
+                height: 50.h,
                 decoration: BoxDecoration(
                   color: Colors.white,
                 ),
               ),
               Container(
-                width: MediaQuery.sizeOf(context).width,
-                height: MediaQuery.sizeOf(context).height / 1.6,
+                width: 100.w,
+                height: 50.h,
                 decoration: BoxDecoration(
                   color: Color(0xFF674AEF),
                   borderRadius:
@@ -39,8 +41,8 @@ class WelcomeScreen extends StatelessWidget {
           Align(
             alignment: Alignment.bottomCenter,
             child: Container(
-              width: MediaQuery.sizeOf(context).width,
-              height: MediaQuery.sizeOf(context).height / 2.666,
+              width: 100.w,
+              height: 50.h,
               decoration: BoxDecoration(
                 color: Color(0xFF674AEF),
               ),
@@ -50,7 +52,7 @@ class WelcomeScreen extends StatelessWidget {
             alignment: Alignment.bottomCenter,
             child: Container(
               width: MediaQuery.sizeOf(context).width,
-              height: MediaQuery.sizeOf(context).height / 2.666,
+              height: 50.h,
               padding: EdgeInsets.only(top: 40, bottom: 30),
               decoration: BoxDecoration(
                   color: Colors.white,
@@ -68,7 +70,7 @@ class WelcomeScreen extends StatelessWidget {
                     ),
                   ),
                   SizedBox(
-                    height: 15,
+                    height: 2.h,
                   ),
                   Padding(
                     padding: EdgeInsets.symmetric(horizontal: 40),
@@ -82,7 +84,7 @@ class WelcomeScreen extends StatelessWidget {
                     ),
                   ),
                   SizedBox(
-                    height: 20,
+                    height: 2.h,
                   ),
                   Material(
                     color: Color(0xFF674AEF),
@@ -90,8 +92,7 @@ class WelcomeScreen extends StatelessWidget {
                     child: InkWell(
                       onTap: () {},
                       child: Container(
-                        padding:
-                            EdgeInsets.symmetric(vertical: 15, horizontal: 80),
+                        padding: EdgeInsets.symmetric(vertical: 15, horizontal: 80),
                         child: Text(
                           "Get Start",
                           style: TextStyle(
