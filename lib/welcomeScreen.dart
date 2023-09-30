@@ -24,7 +24,7 @@ class WelcomeScreen extends StatelessWidget {
               Container(
                 width: 100.w,
                 height: 50.h,
-                decoration: BoxDecoration(
+                decoration: const BoxDecoration(
                   color: Color(0xFF674AEF),
                   borderRadius:
                       BorderRadius.only(bottomRight: Radius.circular(70)),
@@ -43,7 +43,7 @@ class WelcomeScreen extends StatelessWidget {
             child: Container(
               width: 100.w,
               height: 50.h,
-              decoration: BoxDecoration(
+              decoration: const BoxDecoration(
                 color: Color(0xFF674AEF),
               ),
             ),
@@ -51,16 +51,16 @@ class WelcomeScreen extends StatelessWidget {
           Align(
             alignment: Alignment.bottomCenter,
             child: Container(
-              width: MediaQuery.sizeOf(context).width,
+              width: 100.w,
               height: 50.h,
-              padding: EdgeInsets.only(top: 40, bottom: 30),
-              decoration: BoxDecoration(
+              padding: const EdgeInsets.only(top: 40, bottom: 30),
+              decoration: const BoxDecoration(
                   color: Colors.white,
                   borderRadius:
                       BorderRadius.only(topLeft: Radius.circular(70))),
               child: Column(
                 children: [
-                  Text(
+                  const Text(
                     "Learning is Everything",
                     style: TextStyle(
                       fontSize: 25,
@@ -93,7 +93,7 @@ class WelcomeScreen extends StatelessWidget {
                       onTap: () {},
                       child: Container(
                         padding: EdgeInsets.symmetric(vertical: 15, horizontal: 80),
-                        child: Text(
+                        child: const Text(
                           "Get Start",
                           style: TextStyle(
                             color: Colors.white,
