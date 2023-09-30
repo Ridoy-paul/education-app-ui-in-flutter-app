@@ -36,6 +36,78 @@ class WelcomeScreen extends StatelessWidget {
               ),
             ],
           ),
+          Align(
+            alignment: Alignment.bottomCenter,
+            child: Container(
+              width: MediaQuery.sizeOf(context).width,
+              height: MediaQuery.sizeOf(context).height / 2.666,
+              decoration: BoxDecoration(
+                color: Color(0xFF674AEF),
+              ),
+            ),
+          ),
+          Align(
+            alignment: Alignment.bottomCenter,
+            child: Container(
+              width: MediaQuery.sizeOf(context).width,
+              height: MediaQuery.sizeOf(context).height / 2.666,
+              padding: EdgeInsets.only(top: 40, bottom: 30),
+              decoration: BoxDecoration(
+                  color: Colors.white,
+                  borderRadius:
+                      BorderRadius.only(topLeft: Radius.circular(70))),
+              child: Column(
+                children: [
+                  Text(
+                    "Learning is Everything",
+                    style: TextStyle(
+                      fontSize: 25,
+                      fontWeight: FontWeight.w600,
+                      letterSpacing: 1,
+                      wordSpacing: 2,
+                    ),
+                  ),
+                  SizedBox(
+                    height: 15,
+                  ),
+                  Padding(
+                    padding: EdgeInsets.symmetric(horizontal: 40),
+                    child: Text(
+                      "Learnng with Pleasure with Ridoy Chandra Paul, Wherever you are.",
+                      textAlign: TextAlign.center,
+                      style: TextStyle(
+                        fontSize: 17,
+                        color: Colors.black.withOpacity(0.6),
+                      ),
+                    ),
+                  ),
+                  SizedBox(
+                    height: 20,
+                  ),
+                  Material(
+                    color: Color(0xFF674AEF),
+                    borderRadius: BorderRadius.circular(10),
+                    child: InkWell(
+                      onTap: () {},
+                      child: Container(
+                        padding:
+                            EdgeInsets.symmetric(vertical: 15, horizontal: 80),
+                        child: Text(
+                          "Get Start",
+                          style: TextStyle(
+                            color: Colors.white,
+                            fontSize: 22,
+                            fontWeight: FontWeight.bold,
+                            letterSpacing: 1
+                          ),
+                        ),
+                      ),
+                    ),
+                  )
+                ],
+              ),
+            ),
+          ),
         ]),
       ),
     );
